@@ -132,7 +132,7 @@ accordion.forEach((item) => {
  
 // footer
 const year = new Date();
-document.querySelector("#year").innerHTML = "JB. @ " + year.getFullYear();
+document.querySelector("#year").innerHTML = "@ " + year.getFullYear() + " JB.";
 
 // animation
 	 gsap.registerPlugin(ScrollTrigger);
