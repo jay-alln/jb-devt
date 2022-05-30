@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joshua Benedict</title>
     <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <!-- AOS LINK -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- main css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- scroll down css -->
+    <link rel="stylesheet" href="./assets/css/scrollDown.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -20,7 +33,7 @@
           <a href="#">J<span>B.</span></a>
         </div>
         <ul class="menu">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -32,7 +45,7 @@
       </div>
     </nav>
 
-    <header id="home">
+    <section id="header">
       <div id="particles-js"></div>
 
       <div class="content">
@@ -45,17 +58,19 @@
         <a href="#projects" class="link">View my work </a>
       </div>
 
-      <!-- <div class="image-container">
-        <div class="img">
-          <img src="./images/avatar.svg" alt="boy on computer" class="tilt" />
-        </div>
-      </div> -->
-    </header>
+      <!-- scroll Down -->
+      <div class="scroll">
+        <a href="#about">
+          <div class="mouse"></div>
+        </a>
+        <!-- <p class="text-scroll">Scroll</p> -->
+      </div>
+    </section>
 
-    <div id="about">
+    <section id="about">
       <h1 class="heading">about <span>me.</span></h1>
       <div class="skill-container">
-        <div class="column about-content">
+        <div class="column-about about-content">
           <h2>
             I'm Joshua and i'm a <span style="color: #3269ff">Developer</span>.
           </h2>
@@ -67,48 +82,108 @@
           <p>Let's make something special.</p>
         </div>
 
-        <div class="column right">
-          <h2 class="head">My skills</h2>
-          <div class="skill">
-            <div class="bars">
-              <div class="info">
-                <span>HTML</span>
-                <span><img src="images/icons/bxl-html5.svg" alt="html" /></span>
+        <div class="skills column-about" id="skills">
+          <h2 class="section__title">Skills</h2>
+          <span class="section__subtitle">My tecnical level</span>
+
+          <div class="skills_container container grid">
+            <!-- skills 1 -->
+            <div class="skills_content skills_open">
+              <div class="skills_header">
+                <i class="uil uil-brackets-curly skills_icon"></i>
+
+                <div>
+                  <h1 class="skills_title">Front end Developer</h1>
+                  <span class="skills_subtitle">More ...</span>
+                </div>
+
+                <i class="uil uil-angle-down skills_arrow"></i>
               </div>
-              <div class="line html"></div>
+
+              <div class="skills_list grid">
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">HTML</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Basic</span>
+                  </div>
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">CSS</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Advanced</span>
+                  </div>
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">JavaScript & Typescript</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Intermediate</span>
+                  </div>
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">React</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Intermediate</span>
+                  </div>
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">Git</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Intermediate</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="bars">
-              <div class="info">
-                <span>CSS</span>
-                <span><img src="images/icons/bxl-css3.svg" alt="css" /></span>
+
+            <!-- skills 2 -->
+            <div class="skills_content skills_close">
+              <div class="skills_header">
+                <i class="uil uil-server-network skills_icon"></i>
+
+                <div>
+                  <h1 class="skills_title">Back end Developer</h1>
+                  <span class="skills_subtitle">More ...</span>
+                </div>
+
+                <i class="uil uil-angle-down skills_arrow"></i>
               </div>
-              <div class="line css"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>JavaScript</span>
-                <span><img src="images/icons/bxl-javascript.svg" alt="javascript" /></span>
+
+              <div class="skills_list grid">
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">Php</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Intermediate</span>
+                  </div>
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">Node Js</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Basic</span>
+                  </div>
+                  <div class="skills_titles">
+                    <div>
+                      <i class="uil uil-check-circle"></i>
+                      <h3 class="skills_name">MySql</h3>
+                    </div>
+                    <span class="skills_Level skills_number">Intermediate</span>
+                  </div>
+                </div>
               </div>
-              <div class="line js"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>PHP</span>
-                <span><img src="images/icons/bxl-php.svg" alt="php" /></span>
-              </div>
-              <div class="line php"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>MySQL</span>
-                <span><img src="images/icons/mysql_logo_icon_145044.png" alt="mysql" /></span>
-              </div>
-              <div class="line mysql"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- services section starts  -->
 
@@ -117,21 +192,30 @@
 
       <div class="box-container">
         <div class="box tilt">
-          <i class="fas fa-code"></i>
-          <h3>web development</h3>
+          <!-- <i class="fas fa-code"></i> -->
+          <i class="fa-solid fa-code"></i>
+          <h3>web dev</h3>
           <p>
-            Websites don't have to be static, I love making pages come to life.
+            I also develop the websites. I create high performance website with
+            blazing fast speed.
           </p>
         </div>
 
         <div class="box tilt">
-          <i class="fas fa-database"></i>
-          <h3>Database Management</h3>
-          <p>Planning and developing of database, as well as troubleshooting.</p>
+          <!-- <i class="fas fa-mobile"></i> -->
+          <!-- <i class="fa-light fa-mobile"></i> -->
+          <i class="fa-solid fa-mobile-screen-button"></i>
+
+          <h3>app Dev</h3>
+          <p>
+            I develop mobile application. I create mobile app with eye catching
+            ui.
+          </p>
         </div>
 
         <div class="box tilt">
-          <i class="fas fa-mobile"></i>
+          <!-- <i class="fa-light fa-laptop-mobile"></i> -->
+          <i class="uil uil-browser"></i>
           <h3>Responsive designs</h3>
           <p>My layouts will work on any device, big or small.</p>
         </div>
@@ -141,12 +225,12 @@
     <!-- services section ends -->
 
     <!-- project section start -->
-    <div id="projects">
+    <section id="projects">
       <h1 class="heading"><span> my </span> portfolio.</h1>
 
       <div class="gallery">
         <div class="container">
-          <div class="row">
+          <div class="filter-row">
             <div class="gallery-filter">
               <span class="filter-item active" data-filter="all">All</span>
               <span class="filter-item" data-filter="react">React</span>
@@ -165,8 +249,10 @@
                     href="https://distracted-snyder-0f4f19.netlify.app/"
                     target="_blank"
                     class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
                   >
+                    <!-- <img src="./images/plus.png" alt="plus icon" /> -->
+                    <i class="uil uil-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="contentBox" title="view description">
@@ -189,16 +275,16 @@
                     href="https://infallible-borg-015315.netlify.app"
                     target="_blank"
                     class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
                   >
+                    <!-- <img src="./images/plus.png" alt="plus icon" /> -->
+                    <i class="uil uil-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="contentBox" title="view description">
                 <div class="label">Landing Page</div>
                 <div class="contentBody">
-                  <div class="content">
-                    Digital Agency Landing page
-                  </div>
+                  <div class="content">Digital Agency Landing page</div>
                 </div>
               </div>
             </div>
@@ -212,8 +298,10 @@
                     href="https://quizzical-einstein-a4a00c.netlify.app"
                     target="_blank"
                     class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
                   >
+                    <!-- <img src="./images/plus.png" alt="plus icon"  /> -->
+                    <i class="uil uil-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="contentBox" title="view description">
@@ -236,8 +324,10 @@
                     href="https://gifted-perlman-6d29d0.netlify.app"
                     target="_blank"
                     class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
                   >
+                    <!-- <img src="./images/plus.png" alt="plus icon"/> -->
+                    <i class="uil uil-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="contentBox" title="view description">
@@ -256,9 +346,10 @@
               <div class="gallery-item-inner">
                 <img src="./images/recipe.PNG" alt="recipe app" />
                 <div class="content">
-                  <a href="https://chopshops.netlify.app/" target="_blank" class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
-                  >
+                  <a href="https://jayb2.com" target="_blank" class="btn">
+                    <!-- <img src="./images/plus.png" alt="plus icon" /> -->
+                    <i class="uil uil-link"></i>
+                  </a>
                 </div>
               </div>
               <div class="contentBox" title="view description">
@@ -278,75 +369,25 @@
               <div class="gallery-item-inner">
                 <img src="./images/expensetracker.png" alt="php project" />
                 <div class="content">
-                  <a href="http://expensetracker-jbdevt.great-site.net/" target="_blank" class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
+                  <a
+                    href="https://php-jayalln0.herokuapp.com/"
+                    target="_blank"
+                    class="btn"
                   >
+                    <!-- <img src="./images/plus.png" alt="plus icon" /> -->
+                    <i class="uil uil-link" title="View demo"></i>
+                  </a>
                 </div>
               </div>
               <div class="contentBox" title="view description">
                 <div class="label">Expense Tracker</div>
                 <div class="contentBody">
                   <div class="content">
-                    Expense tracker is a php system used to keep track of your daily records of your expenses.In this project one can view expenses on a daily, monthly and yearly basis, a user can also (add/delete) and also view expense on a day, month, year wise basis. Build in PHP and uses MySQL database. 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- gallery item end -->
-            <!-- gallery item start -->
-            <div class="gallery-item email">
-              <div class="gallery-item-inner">
-                <img src="./images/promotion" alt="email project" />
-                <div class="content">
-                  <a href="https://pensive-allen-971b13.netlify.app" target="_blank" class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
-                  >
-                </div>
-              </div>
-              <div class="contentBox" title="view description">
-                <div class="label">Promotion</div>
-                <div class="contentBody">
-                  <div class="content">Promotional email template.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- gallery item end -->
-            <!-- gallery item start -->
-            <div class="gallery-item email">
-              <div class="gallery-item-inner">
-                <img src="./images/newsletter" alt="email project" />
-                <div class="content">
-                  <a href="https://determined-kowalevski-85235a.netlify.app" target="_blank" class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
-                  >
-                </div>
-              </div>
-              <div class="contentBox" title="view description">
-                <div class="label">News Letter</div>
-                <div class="contentBody">
-                  <div class="content">
-                    News Letter email template.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- gallery item end -->
-            <!-- gallery item start -->
-            <div class="gallery-item email">
-              <div class="gallery-item-inner">
-                <img src="./images/transaction" alt="email project" />
-                <div class="content">
-                  <a href="https://affectionate-almeida-e63f9a.netlify.app" target="_blank" class="btn"
-                    ><img src="./images/plus.png" alt="plus icon"></a
-                  >
-                </div>
-              </div>
-              <div class="contentBox" title="view description">
-                <div class="label">Transaction</div>
-                <div class="contentBody">
-                  <div class="content">
-                    Transaction email template. 
+                    Expense tracker is a php system used to keep track of your
+                    daily records of your expenses.In this project one can view
+                    expenses on a daily, monthly and yearly basis, a user can
+                    also (add/delete) and also view expense on a day, month,
+                    year wise basis. Build in PHP and uses MySQL database.
                   </div>
                 </div>
               </div>
@@ -355,26 +396,28 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- project section end -->
 
-    <div id="contact">
+    <!-- contact section start -->
+    <section id="contact">
       <h1 class="heading">contact <span> me.</span></h1>
 
       <div class="contact-content">
         <div class="column left">
           <div class="text">Get in Touch</div>
           <p>
-            Interested in working together?Use the details below to connect.
+            Interested in working together? Use the details below to connect.
           </p>
           <div class="icons">
-            <!-- <div class="row">
-              <i class="fas fa-user"></i>
+            <div class="row">
+              <i class="uil uil-user"></i>
+              <!-- <i class="fas fa-user"></i> -->
               <div class="info">
                 <div class="head">Name</div>
                 <div class="sub-title">Joshua Benedict</div>
               </div>
-            </div> -->
+            </div>
             <!-- <div class="row">
               <i class="fas fa-map-marker-alt"></i>
               <div class="info">
@@ -384,61 +427,39 @@
             </div> -->
 
             <div class="row">
-              <i class="fas fa-envelope"></i>
+              <!-- <i class="fas fa-envelope"></i> -->
+              <i class="uil uil-envelopes"></i>
               <div class="info">
-                <!-- <div class="head">Email</div> -->
-                <div class="sub-title"><a href="mailto:contact.jbdevt@gmail.com">contact.jbdevt@gmail.com</a></div>
+                <div class="head">Email</div>
+                <div class="sub-title">
+                  <a href="mailto:contact.jbdevt@gmail.com"
+                    >contact.jbdevt@gmail.com</a
+                  >
+                </div>
               </div>
             </div>
           </div>
 
           <div class="contact-social-links">
-<!--             <a
+            <a
               href="https://www.linkedin.com/in/joshua-benedict-403356208"
               target="_blank"
             >
-              <i class="fab fa-linkedin"></i>
-            </a> -->
+              <!-- <i class="fab fa-linkedin"></i> -->
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
             <a href="https://github.com/jay-alln" target="_blank">
-              <i class="fab fa-github"></i>
+              <!-- <i class="fab fa-github"></i> -->
+              <i class="uil uil-github-alt"></i>
             </a>
           </div>
         </div>
-
-        <!-- <div class="column last">
-          <div class="text">Message me</div>
-          <form
-            id="my-form"
-            action="https://formspree.io/f/meqpykqe"
-            method="POST"
-          >
-            <div class="fields">
-              <div class="field name">
-                <input type="text" name="name" placeholder="Enter name" />
-              </div>
-              <div class="field email">
-                <input
-                  type="email"
-                  name="email"
-                  required="required"
-                  placeholder="Email"
-                />
-              </div>
-            </div>
-            <div class="field textarea">
-              <textarea
-                required="required"
-                placeholder="Your Message..."
-              ></textarea>
-            </div>
-            <div class="button-area">
-              <button id="button">Submit</button>
-            </div>
-          </form>
-          <p id="status"></p>
-        </div> -->
+        <div class="svg-contact-content center">
+          <img src="./images/svg/email.svg" alt="" />
+        </div>
       </div>
-    </div>
+    </section>
+    <!-- contact section end -->
     <footer>
       <p id="year"><span>JB.</span></p>
     </footer>
