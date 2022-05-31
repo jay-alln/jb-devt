@@ -667,7 +667,8 @@ section {
   color: var(--light-blue); 
 }
 #contact .contact-content .info .sub-title {
-  font-size: 1rem;
+  font-size: var(--normal-font-size);
+  color: var(--darkgray);
 }
 #contact .contact-content .row .sub-title a {
   color: var(--darkgray);
