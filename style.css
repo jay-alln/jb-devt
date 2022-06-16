@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* open sans */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/* courier */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -57,8 +59,8 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Rubik", sans-serif;
-  /* height: 200vh; */
+  /* font-family: "Rubik", sans-serif; */
+  font-family: 'Courier Prime', monospace;
   background: #f8f8f8;
 }
 .center {
@@ -119,7 +121,8 @@ section {
 
 /* navbar styling */
 .navbar {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Rubik", sans-serif; 
   font-weight: 500;
   position: fixed;
   width: 100%;
@@ -224,15 +227,19 @@ section {
   width: 100%;
   margin: 2em auto;
   line-height: 1.3;
+  /* font-family: 'Courier Prime', monospace; */
 }
 #header p .highlight {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   color: var(--light-blue);
   font-size: 1.57rem;
-  font-weight: 700;
+  font-weight: 400;
+  /* font-family: 'Courier Prime', monospace; */
+  font-family: "Rubik", sans-serif; 
 }
 .link {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Rubik", sans-serif; 
   position: relative;
   margin-bottom: 16px;
   color: var(--light-blue);
@@ -292,9 +299,6 @@ section {
   /* grid-template-columns: repeat(2, 50%); */
   grid-template-columns: repeat(auto-fit, 45%);
   justify-content: space-around;
-}
-.about-content {
-  /* border: 2px solid red; */
 }
 .about-content {
   justify-self: center;
@@ -551,10 +555,6 @@ section {
 .gallery .gallery-item.hide{
 	display: none;
 }
-.zomata {
-  /* grid-column: span 2; */
-  /* border: 2px solid red; */
-}
 /* accordion start */
 
 .gallery .contentBox {
@@ -613,6 +613,9 @@ section {
 }
 .gallery .contentBox .label.active::before {
   transform: rotate(-180deg);
+}
+.contentBox .content-link {
+  color: var(--light-blue);
 }
 
 /* accordion */
@@ -718,6 +721,9 @@ footer {
 }
 footer span {
   color: var(--light-blue);
+}
+footer .sign {
+  letter-spacing: -3px;
 }
 
 @media (max-width: 991px) {
